@@ -1,0 +1,144 @@
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  color: #102a43;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+}
+
+.layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(16, 42, 67, 0.08);
+  padding: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  background: #f0f4f8;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.user-card strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.user-card p {
+  margin: 4px 0;
+  color: #334e68;
+}
+
+.delete-button,
+.add-button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-button {
+  background: #d04545;
+  color: #ffffff;
+}
+
+.add-button {
+  background: #1d8cff;
+  color: #ffffff;
+  width: 100%;
+}
+
+.user-form {
+  display: grid;
+  gap: 18px;
+}
+
+.user-form label,
+.checkbox-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: #102a43;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #bcccdc;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: #102a43;
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='checkbox']:focus {
+  outline: 2px solid #1d8cff;
+  outline-offset: 3px;
+}
+
+fieldset {
+  border: 1px solid #bcccdc;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.empty-message {
+  color: #334e68;
+  margin: 0;
+}
+
+@media (min-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
